@@ -1,0 +1,90 @@
+8-Bit 2 4 6
+Country 3 5 7
+Disco 3 4 5 6
+EDM 2 3 4 5
+Emo 2 4 6
+HEARTSTEEL 3 5 7 10
+Hyperpop 1 2 3 4
+ILLBEATS 1
+Jazz 2 3 4
+K/DA 3 5 7 10
+Maestro 1
+Mixmaster 1
+Pentakill 3 5 7 10
+Punk 2 4 6
+TrueDamage 2 4 6 9
+Wildcard 1
+BigShot 2 4 6
+Bruiser 2 4 6
+Breakout 1
+CrowdDiver 2 4 6
+Dazzler 2 4 6
+Edgelord 3 5 7
+Executioner 2 4 6
+Guardian 2 4 6
+Mosher 2 4 6
+Rapidfire 2 4 6
+Sentinel 2 4 6 8
+Spellweaver 3 5 7 9
+Superfan 3 4 5
+UNITS
+Annie 1 Emo Spellweaver
+Corki 1 8-Bit Big Shot
+Evelynn 1 K/DA CrowdDiver
+Jinx 1 Punk Rapidfire
+KSante 1 HEARTSTEEL Sentinel
+Kennen 1 TrueDamage Guardian Superfan
+Lillia 1 K/DA Sentinel Superfan
+Nami 1 Disco Dazzler
+Olaf 1 Pentakill Bruiser
+TahmKench 1 Country Bruiser
+Taric 1 Disco Guardian
+Vi 1 Punk Mosher
+Yasuo 1 TrueDamage Edgelord
+Aphelios 2 HEARTSTEEL Rapidfire
+Bard 2 Jazz Dazzler
+Garen 2 8-Bit Sentinel
+Gnar 2 Pentakill Mosher Superfan
+Gragas 2 Disco Bruiser Spellweaver
+Jax 2 EDM Mosher
+Kaisa 2 K/DA Big Shot
+Katarina 2 Country CrowdDiver
+Kayle 2 Pentakill Edgelord
+Pantheon 2 Punk Guardian
+Senna 2 TrueDamage Rapidfire
+Seraphine 2 K/DA Spellweaver
+Twitch 2 Punk Executioner
+Amumu 3 Emo Guardian
+Ekko 3 True Damage Sentinel Spellweaver
+Lulu 3 Hyperpop Spellweaver
+Lux 3 EDM Dazzler
+MissFortune 3 Jazz BigShot
+Mordekaier 3 Pentakill Sentinel
+Neeko 3 K/DA Guardian Superfan
+Riven 3 8-Bit Edgelord
+Samira 3 Country Executioner
+Sett 3 HEARTSTEEL Bruiser Mosher
+Urgot 3 Country Mosher
+Vex 3 Emo Executioner
+Yone 3 HEARTSTEEL CrowdDiver Edgelord
+Ahri 4 K/DA Spellweaver
+AkaliK 4 K/DA Executioner Breakout
+AkaliT 4 TrueDamage Executioner Breakout
+Blitzcrank 4 Disco Sentinel
+Caitlyn 4 8-Bit Rapidfire
+Ezreal 4 HEARTSTEEL Big Shot
+Karthus 4 Pentakill Executioner
+Poppy 4 Emo Mosher
+Thresh 4 Country Guardian
+TwistedFate 4 Disco Dazzler
+Viego 4 Pentakill Edgelord
+Zac 4 EDM Bruiser
+Zed 4 EDM CrowdDiver
+Illaoi 5 ILLBEATS Bruiser
+Jhin 5 Maestro Big Shot
+Kayn 5 HEARTSTEEL Wildcard Edgelord
+Lucian 5 Jazz Rapidfire
+Qiyana 5 TrueDamage CrowdDiver
+Sona 5 Mixmaster Spellweaver
+Yorick 5 Pentakill Guardian Mosher
+Ziggs 5 Hyperpop Dazzler
