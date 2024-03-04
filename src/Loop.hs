@@ -5,6 +5,7 @@ import SetData
 import Traits
 import Units
 import UnitLister
+--import Brick
 
 board :: [Unit]
 board = []
@@ -32,3 +33,4 @@ loop = do
 
                                     --loop set board activeTraits
                                     -}
+                                    
