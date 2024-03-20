@@ -1,6 +1,7 @@
 module SetData where
 import Traits
 import Units
+import Data.Char (toLower)
 
 data SetData = SetData {
     traits :: [Trait]
@@ -20,13 +21,16 @@ addTrait trait std = std{SetData.traits = trait : SetData.traits std }
 addUnit :: Unit -> SetData -> SetData
 addUnit unit std = std{SetData.units = unit : SetData.units std }
 
+--toLower :: TraitName -> TraitName
+--toLower (TraitName x) = toLower x
+
 getTrait :: TraitName -> SetData -> Maybe Trait
 getTrait name std = gTrait name (SetData.traits std) 
     where gTrait :: TraitName -> [Trait] -> Maybe Trait
           gTrait name [] = Nothing
           gTrait name (x:xs) 
-            | name == Traits.name x = Just x
-            | name /= Traits.name x = gTrait name xs
+            | map toLower name == map toLower (Traits.name x) = Just x
+            | map toLower name /= map toLower (Traits.name x) = gTrait name xs
             | otherwise = Nothing
 
 getUnit :: UnitName -> SetData -> Maybe Unit
@@ -34,6 +38,6 @@ getUnit name std = gUnit name (SetData.units std)
     where gUnit :: UnitName -> [Unit] -> Maybe Unit
           gUnit name [] = Nothing
           gUnit name (x:xs) 
-            | name == Units.name x = Just x
-            | name /= Units.name x = gUnit name xs
+            | map toLower name == map toLower (Units.name x) = Just x
+            | map toLower name /= map toLower (Units.name x) = gUnit name xs
             | otherwise = Nothing
