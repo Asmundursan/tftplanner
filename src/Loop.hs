@@ -11,11 +11,10 @@ import Data.Maybe
 --import Brick
 
 type Board = [Unit]
+type ActiveTraitList = [Trait]
 
 newBoard :: Board
 newBoard = []
-
-type ActiveTraitList = [(Trait, (Int, Int))]
 
 newActiveTraits :: ActiveTraitList
 newActiveTraits = []
@@ -27,12 +26,16 @@ setSelection = do
     case i of
         "10" -> loadSet "src/Set10.txt"
         _ -> setSelection
+{-
+traitUpdate :: TraitList -> ActiveTraitList -> ActiveTraitList
+traitUpdate (x:xs) (y:ys) 
+    | x == head y = 
+-}
 
-addToBoard :: String -> SetData -> ActiveTraitList -> Board -> Board
+addToBoard :: UnitName -> SetData -> ActiveTraitList -> Board -> Board
 addToBoard unitName set traits board
     | isJust (getUnit unitName set) = board ++ [fromJust (getUnit unitName set)]
     | otherwise = board
-
 
 initialize :: IO ()
 initialize = do
