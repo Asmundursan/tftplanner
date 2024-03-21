@@ -21,10 +21,11 @@ newActiveTraits = []
 
 setSelection :: IO SetData
 setSelection = do
-    putStrLn "Choose a set: 10"
+    putStrLn "Choose a set: 10 or 11"
     i <- getLine
     case i of
         "10" -> loadSet "src/Set10.txt"
+        "11" -> loadSet "src/Set11.txt"
         _ -> setSelection
 {-
 traitUpdate :: TraitList -> ActiveTraitList -> ActiveTraitList
@@ -53,6 +54,9 @@ loop set board activeTraits = do
     case head x of
         "add" -> loop set (addToBoard (last x) set activeTraits board) activeTraits
         "close" -> putStr "Closed program \n"
+        "list" -> do
+            putStrLn (show set)
+            loop set board activeTraits
         "help" -> do
             putStrLn "add <unit>: to add a unit to the board \nrem <unit>: to remove a unit from the board\nlist <cost/trait>: lists all the units of that cost/trait\nclose: to close the program\n"
             loop set board activeTraits

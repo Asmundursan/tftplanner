@@ -1,0 +1,86 @@
+Dragonlord 2 3 4 5
+Dryad 2 4 6
+Fated 3 5 7 10
+Fortune 3 5 7
+Ghostly 2 4 6 8
+Heavenly 2 3 4 5 6 7
+Inkshadow 3 5 7
+Lovers 1
+Mythic 3 5 7 10
+Porcelain 2 4 6
+Storyweaver 3 5 7 10
+Umbral 2 4 6 8
+Altruist 2 3 4
+Arcanist 2 4 6 8
+Artist 1
+Behemoth 2 4 6
+Bruiser 2 4 6 8
+Duelist 2 4 6 8
+Exalted 3 5
+Great 1
+Invoker 2 4 6
+Reaper 2 4
+Sage 2 3 4 5
+Sniper 2 4 6
+SpiritWalker 1
+TrickShot 2 4
+Warden 2 4 6
+UNITS
+Ahri 1 Fated Arcanist
+Caitlyn 1 Ghostly Sniper
+Chogath 1 Mythic Behemoth
+Darius 1 Umbral Duelist
+Garen 1 Storyweaver Warden
+Jax 1 Inkshadow Warden
+Kobuko 1 Fortune Bruiser
+Khazix 1 Heavenly Reaper
+Malphite 1 Heavenly Behemoth
+Sivir 1 Storyweaver TrickShot
+Yasuo 1 Fated Duelist
+Aatrox 2 Ghostly Inkshadow Bruiser
+Gnar 2 Dryad Warden
+Janna 2 Dragonlord Invoker
+Kindred 2 Dryad Fated Reaper
+Lux 2 Porcelain Arcanist
+Neeko 2 Heavenly Mythic Arcanist
+Qiyana 2 Heavenly Duelist
+Riven 2 Storyweaver Altruist Bruiser
+Senna 2 Inkshadow Sniper
+Shen 2 Ghostly Behemoth
+Teemo 2 Fortune TrickShot
+Yorick 2 Umbral Behemoth
+Zyra 2 Storyweaver Sage
+Alune 3 Umbral Invoker
+Amumu 3 Porcelain Warden
+Aphelios 3 Fated Sniper
+Bard 3 Mythic TrickShot
+Diana 3 Dragonlord Sage
+Illaoi 3 Ghostly Arcanist Warden
+Soraka 3 Heavenly Altruist
+TahmKench 3 Mythic Bruiser
+Thresh 3 Fated Behemoth
+Tristana 3 Fortune Duelist
+Volibear 3 Inkshadow Duelist
+Yone 3 Umbral Reaper
+Zoe 3 Fortune Storyweaver Arcanist
+Annie 4 Fortune Invoker
+Ashe Porcelain Sniper
+Galio 4 Storyweaver Bruiser
+Kaisa 4 Inkshadow TrickShot
+Kayn 4 Ghostly Reaper
+LeeSin 4 Dragonlord Duelist
+Lillia 4 Mythic Invoker
+Morgana 4 Ghostly Sage
+Nautilus 4 Mythic Warden
+Ornn 4 Dryad Behemoth
+Sylas 4 Umbral Bruiser
+Syndra 4 Fated Arcanist
+Azir 5 Dryad Invoker
+Hwei 5 Mythic Artist
+Irelia 5 Storyweaver Duelist
+Lissandra 5 Porcelain Arcanist
+Rakan 5 Dragonlord Lovers Altruist
+Sett 5 Fated Umbral Warden
+Udyr 5 Inkshadow Behemoth SpiritWalker
+Wukong 5 Heavenly Great Sage
+Xayah 5 Dragonlord Lovers TrickShot
