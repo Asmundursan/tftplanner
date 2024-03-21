@@ -4,4 +4,4 @@ module Main (main) where
 import Loop
 
 main :: IO ()
-main = loop
+main = initialize
