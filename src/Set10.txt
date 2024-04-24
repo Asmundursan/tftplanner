@@ -55,7 +55,7 @@ Senna 2 TrueDamage Rapidfire
 Seraphine 2 K/DA Spellweaver
 Twitch 2 Punk Executioner
 Amumu 3 Emo Guardian
-Ekko 3 True Damage Sentinel Spellweaver
+Ekko 3 TrueDamage Sentinel Spellweaver
 Lulu 3 Hyperpop Spellweaver
 Lux 3 EDM Dazzler
 MissFortune 3 Jazz BigShot

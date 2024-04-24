@@ -64,7 +64,7 @@ Volibear 3 Inkshadow Duelist
 Yone 3 Umbral Reaper
 Zoe 3 Fortune Storyweaver Arcanist
 Annie 4 Fortune Invoker
-Ashe Porcelain Sniper
+Ashe 4 Porcelain Sniper
 Galio 4 Storyweaver Bruiser
 Kaisa 4 Inkshadow TrickShot
 Kayn 4 Ghostly Reaper
