@@ -10,7 +10,10 @@ data Unit = Unit {
     deriving(Read, Eq)
 
 instance Show Unit where
-    show unit = "\n" ++ Units.name unit ++ " " ++ show (cost unit) ++ " " ++ show (traits unit) 
+    show unit = "\n" ++ Units.name unit ++ " " ++ show (cost unit) ++ " " ++ showTraitList (traits unit)
+        where showTraitList (t:traits) 
+                | traits == [] = t
+                | otherwise = t ++ " " ++ showTraitList traits
     
 type UnitName = String
 type TraitList = [String]
