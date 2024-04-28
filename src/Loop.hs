@@ -29,10 +29,11 @@ addToBoard unitName set board
     | isJust (getUnit unitName set) = board ++ [fromJust (getUnit unitName set)]
     | otherwise = board
 
-list :: String -> SetData -> (Either TraitName Int,[Unit])
+list :: String -> SetData -> [Unit]
 list str set
-    | isJust (readMaybe str :: Maybe Integer) = unitLister (Right (read str)) (units set)
-    | otherwise = unitLister (Left str) (units set)
+    | str == "all" || null str = units set
+    | isJust (readMaybe str :: Maybe Integer) = snd(unitLister (Right (read str)) (units set))
+    | otherwise = snd(unitLister (Left str) (units set))
 
 helpText :: String 
 helpText = "add <unit>: to add a unit to the board \nrem <unit>: to remove a unit from the board\nlist <cost/trait>: lists all the units of that cost/trait\nhelp: show this text\nclose: closes the program\n"
@@ -56,7 +57,7 @@ loop set board = do
         "rem" -> loop set (filter (/= fromJust(getUnit (last x) set)) board)
         "close" -> putStr "Closed program \n"
         "list" -> do
-            putStrLn (show (snd(list (last x) set)))
+            putStrLn (show (list (last x) set))
             loop set board
         "help" -> do
             putStrLn helpText
