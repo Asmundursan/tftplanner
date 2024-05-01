@@ -30,3 +30,7 @@ newActiveTraitList board set = map construct counts
             | t <= x = hActiveTier tiers x
             | t > x = t
             | otherwise = 0
+
+
+toNextTier :: ActiveTrait -> Int
+toNextTier ActiveTrait{ctier = c, ntier = n} = n - c

@@ -6,6 +6,7 @@ import Traits
 import Units
 import UnitLister
 import ActiveTraitList
+import AutoPlanner
 
 import Data.List.Split
 import Data.Maybe
@@ -33,11 +34,11 @@ list :: String -> SetData -> String
 list str set
     | str == "units" = show (units set)
     | str == "traits" = show (SetData.traits set)
-    | isJust (readMaybe str :: Maybe Integer) = show (snd(unitLister (Right (read str)) (units set)))
-    | otherwise = show (snd(unitLister (Left str) (units set)))
+    | isJust (readMaybe str :: Maybe Integer) = show (unitLister (units set) (Right (read str)))
+    | otherwise = show (unitLister (units set) (Left str))
 
 helpText :: String 
-helpText = "add <unit>: to add a unit to the board \nrem <unit>: to remove a unit from the board\nlist <cost/trait>: lists all the units of that cost/trait\nlist units: lists ALL units\nlist traits: list all traits and their tiers\nhelp: show this text\nclose: closes the program\n"
+helpText = "add <unit>: to add a unit to the board \nrm <unit>: to remove a unit from the board\nnew: to make a new board\nlist <cost/trait>: lists all the units of that cost/trait\nlist units: lists ALL units\nlist traits: list all traits and their tiers\nhelp: show this text\nclose: closes the program\n"
 
 initialize :: IO ()
 initialize = do
@@ -55,7 +56,8 @@ loop set board = do
     let x = splitOn " " i
     case head x of
         "add" -> loop set (addToBoard (last x) set board)
-        "rem" -> loop set (filter (/= fromJust(getUnit (last x) set)) board)
+        "rm" -> loop set (filter (/= fromJust(getUnit (last x) set)) board)
+        "new" -> loop set newBoard
         "close" -> putStr "Closed program \n"
         "list" -> do
             putStrLn (list (last x) set)
@@ -63,5 +65,6 @@ loop set board = do
         "help" -> do
             putStrLn helpText
             loop set board
+        "auto" -> loop set (autoPlanner board set 10)
         "" -> loop set board
         _ -> loop set board
