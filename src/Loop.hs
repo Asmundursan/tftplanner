@@ -29,14 +29,15 @@ addToBoard unitName set board
     | isJust (getUnit unitName set) = board ++ [fromJust (getUnit unitName set)]
     | otherwise = board
 
-list :: String -> SetData -> [Unit]
+list :: String -> SetData -> String
 list str set
-    | str == "all" || null str = units set
-    | isJust (readMaybe str :: Maybe Integer) = snd(unitLister (Right (read str)) (units set))
-    | otherwise = snd(unitLister (Left str) (units set))
+    | str == "units" = show (units set)
+    | str == "traits" = show (SetData.traits set)
+    | isJust (readMaybe str :: Maybe Integer) = show (snd(unitLister (Right (read str)) (units set)))
+    | otherwise = show (snd(unitLister (Left str) (units set)))
 
 helpText :: String 
-helpText = "add <unit>: to add a unit to the board \nrem <unit>: to remove a unit from the board\nlist <cost/trait>: lists all the units of that cost/trait\nhelp: show this text\nclose: closes the program\n"
+helpText = "add <unit>: to add a unit to the board \nrem <unit>: to remove a unit from the board\nlist <cost/trait>: lists all the units of that cost/trait\nlist units: lists ALL units\nlist traits: list all traits and their tiers\nhelp: show this text\nclose: closes the program\n"
 
 initialize :: IO ()
 initialize = do
@@ -57,7 +58,7 @@ loop set board = do
         "rem" -> loop set (filter (/= fromJust(getUnit (last x) set)) board)
         "close" -> putStr "Closed program \n"
         "list" -> do
-            putStrLn (show (list (last x) set))
+            putStrLn (list (last x) set)
             loop set board
         "help" -> do
             putStrLn helpText
