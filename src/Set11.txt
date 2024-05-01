@@ -34,7 +34,9 @@ Garen 1 Storyweaver Warden
 Jax 1 Inkshadow Warden
 Kobuko 1 Fortune Bruiser
 Khazix 1 Heavenly Reaper
+KogMaw 1 Mythic Invoker Sniper
 Malphite 1 Heavenly Behemoth
+RekSai 1 Dryad Bruiser
 Sivir 1 Storyweaver TrickShot
 Yasuo 1 Fated Duelist
 Aatrox 2 Ghostly Inkshadow Bruiser
