@@ -47,7 +47,7 @@ Garen 2 8-Bit Sentinel
 Gnar 2 Pentakill Mosher Superfan
 Gragas 2 Disco Bruiser Spellweaver
 Jax 2 EDM Mosher
-Kaisa 2 K/DA Big Shot
+Kaisa 2 K/DA BigShot
 Katarina 2 Country CrowdDiver
 Kayle 2 Pentakill Edgelord
 Pantheon 2 Punk Guardian
@@ -72,7 +72,7 @@ AkaliK 4 K/DA Executioner Breakout
 AkaliT 4 TrueDamage Executioner Breakout
 Blitzcrank 4 Disco Sentinel
 Caitlyn 4 8-Bit Rapidfire
-Ezreal 4 HEARTSTEEL Big Shot
+Ezreal 4 HEARTSTEEL BigShot
 Karthus 4 Pentakill Executioner
 Poppy 4 Emo Mosher
 Thresh 4 Country Guardian
@@ -81,7 +81,7 @@ Viego 4 Pentakill Edgelord
 Zac 4 EDM Bruiser
 Zed 4 EDM CrowdDiver
 Illaoi 5 ILLBEATS Bruiser
-Jhin 5 Maestro Big Shot
+Jhin 5 Maestro BigShot
 Kayn 5 HEARTSTEEL Wildcard Edgelord
 Lucian 5 Jazz Rapidfire
 Qiyana 5 TrueDamage CrowdDiver
