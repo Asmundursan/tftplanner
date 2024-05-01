@@ -29,7 +29,7 @@ Spellweaver 3 5 7 9
 Superfan 3 4 5
 UNITS
 Annie 1 Emo Spellweaver
-Corki 1 8-Bit Big Shot
+Corki 1 8-Bit BigShot
 Evelynn 1 K/DA CrowdDiver
 Jinx 1 Punk Rapidfire
 KSante 1 HEARTSTEEL Sentinel
