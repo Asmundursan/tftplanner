@@ -65,7 +65,7 @@ loop set board = do
         "help" -> do
             putStrLn helpText
             loop set board
-        "auto" -> loop set (autoPlanner board set 4 7 10)
+        "auto" -> loop set (autoPlanner board set 4 3 10)
            
         "" -> loop set board
         _ -> loop set board

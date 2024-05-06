@@ -6,30 +6,15 @@ import SetData
 import UnitLister
 import ActiveTraitList
 
-import Data.List
-import Data.Ord
-
+import Data.List ( maximumBy )
+import Data.Ord ( comparing )
 
 autoPlanner :: Board -> SetData -> Int -> Int -> Int -> Board
-autoPlanner currentBoard set limit1 limit2 limit3 = do
-    let board = autoPlanner1 currentBoard set limit1 limit2
-    maximumBy (comparing (scoreBoard set)) (allBoards board)
+autoPlanner currentBoard set start inc max
+    | start > max = currentBoard
+    | otherwise = autoPlanner (maximumBy (comparing (scoreBoard set)) (allBoards currentBoard)) set (start+inc) inc max
     where
-        allBoards board = buildBoards board set limit3
-
-
-autoPlanner1 :: Board -> SetData -> Int -> Int -> Board
-autoPlanner1 currentBoard set limit1 limit2 = do
-    let board = autoPlanner2 currentBoard set limit1
-    maximumBy (comparing (scoreBoard set)) (allBoards board)
-    where
-        allBoards board = buildBoards board set limit2
-
-autoPlanner2 :: Board -> SetData -> Int -> Board
-autoPlanner2 currentBoard set limit = bestBoard
-    where
-        allBoards = buildBoards currentBoard set limit
-        bestBoard = maximumBy (comparing (scoreBoard set)) allBoards
+        allBoards board = buildBoards board set start
 
 potentialUnits :: Board -> SetData -> [Unit]
 potentialUnits board set = [x | x <- concatMap ((unitLister (units set) . Left) . traitname) atl, x `notElem` board]
@@ -44,9 +29,9 @@ buildBoards board set maxSize
         unit <- potentials
         buildBoards (unit : board) set maxSize
 
-
+-- Current scoring priotizing higher tiers of traits.
 scoreBoard :: SetData -> Board -> Int
-scoreBoard set board = sum (map cost board) + 4 * sum activeTiers - length activeTiers
+scoreBoard set board = sum (map cost board) + sum (map (^2) activeTiers)
     where
         activeTiers = map activeTier (newActiveTraitList board set)
 
