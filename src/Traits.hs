@@ -14,11 +14,6 @@ type TraitTiers = [Int]
 
 newTrait :: String -> Trait
 newTrait text = Trait{name = getName text, tiers = getNums text}
-
-getName :: String -> String
-getName (' ':xs) = ""
-getName (x:xs) = x : getName xs
-getName _ = ""
-
-getNums :: String -> [Int]
-getNums text = map read (tail(words text))
+    where
+        getName = head . words
+        getNums = map read . tail . words 

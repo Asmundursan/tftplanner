@@ -6,7 +6,6 @@ import Units
 loadSet :: String -> IO SetData
 loadSet set = do
     contents <- readFile set
-    --print (readLines (lines contents) T emptySetData)
     return (readLines (lines contents) T emptySetData)
 
 data LoadType = None | T | U
