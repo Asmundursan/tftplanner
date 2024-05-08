@@ -35,7 +35,7 @@ list str set
     | otherwise = show (unitLister (units set) (Left str))
 
 helpText :: IO ()
-helpText = putStr "new: clears the board\nadd <unit>: to add a unit to the board \nrm <unit>: to remove a unit from the board\nnew: to make a new board\nlist <cost/trait>: lists all the units of that cost/trait\nlist units: lists ALL units\nlist traits: list all traits and their tiers\nauto: makes you a board of 10 units that fits with the units you have on the board\nchange: goes back to the set selection\nclose: closes the program\n"
+helpText = putStr "new: clears the board\nadd <unit>: to add a unit to the board \nrm <unit>: to remove a unit from the board\nlist <cost/trait>: lists all the units of that cost/trait\nlist units: lists ALL units\nlist traits: list all traits and their tiers\nauto: makes you a board of 10 units that fits with the units you have on the board\nchange: goes back to the set selection\nclose: closes the program\n"
 
 clear :: IO ()
 clear = putStr "\ESC[2J"
