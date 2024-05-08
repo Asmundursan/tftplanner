@@ -1,17 +1,14 @@
 module Loop where
 
-import LoadSet
-import SetData
-import Traits
-import Units
-import UnitLister
-import ActiveTraitList
-import AutoPlanner
+import LoadSet ( loadSet )
+import SetData ( SetData(units, traits), getUnit )
+import Units ( UnitName )
+import UnitLister ( unitLister )
+import ActiveTraitList ( newActiveTraitList, Board )
+import AutoPlanner ( autoPlanner )
 
-import Data.List.Split
-import Data.Maybe
-import Text.Read
---import Brick
+import Data.Maybe ( fromJust, isJust )
+import Text.Read ( readMaybe )
 
 newBoard :: Board
 newBoard = []

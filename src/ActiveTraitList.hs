@@ -1,10 +1,10 @@
 module ActiveTraitList where
-import Traits
-import Units
-import SetData
-import Data.Maybe
+import Traits ( Trait(tiers), TraitName )
+import Units ( Unit(traits) )
+import SetData ( SetData, getTrait )
+import Data.Maybe ( fromJust )
 
-import Data.List 
+import Data.List ( group, sort ) 
 
 data ActiveTrait = ActiveTrait {
     traitname :: TraitName

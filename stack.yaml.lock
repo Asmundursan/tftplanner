@@ -12,13 +12,6 @@ packages:
   original:
     hackage: vty-windows-0.2.0.1@sha256:6c75230057a708168dbc420975572511ad3ec09956bf73c3b6f4be03324e8b13,2815
 - completed:
-    hackage: brick-2.3.1@sha256:4c36e5d77dc360641a5aa9361949d981e4aecc7f1372c862e0b2451d614b5f5c,17394
-    pantry-tree:
-      sha256: 7476f449a27ac6736264f1fdde37e0282d43cd803d00da5ebe0ff811ee4035fc
-      size: 4671
-  original:
-    hackage: brick-2.3.1
-- completed:
     hackage: split-0.2.5@sha256:5bc1ae848bfded3087ea3e568908f1b75f56ecde6f02df3fad1a138dd5c783d5,2625
     pantry-tree:
       sha256: 5d28c851a2c98e3d8ac0f01adc58303d775afe39dce23ec953be64ae65d11166

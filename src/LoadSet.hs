@@ -1,7 +1,7 @@
 module LoadSet where
-import SetData
-import Traits
-import Units
+import SetData ( SetData, emptySetData, addTrait, addUnit )
+import Traits ( newTrait )
+import Units ( newUnit )
 
 loadSet :: String -> IO SetData
 loadSet set = do

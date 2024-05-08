@@ -1,6 +1,6 @@
 module UnitLister where
-import Traits
-import Units
+import Traits ( TraitName )
+import Units ( Unit(cost, traits) )
 import Data.Char (toLower)
 
 unitLister :: [Unit] -> Either TraitName Int -> [Unit]

@@ -1,10 +1,10 @@
 module AutoPlanner where
 
-import Units
-import Traits
-import SetData
-import UnitLister
+import Units ( Unit(cost) )
+import SetData ( SetData(units) )
+import UnitLister ( unitLister )
 import ActiveTraitList
+    ( newActiveTraitList, ActiveTrait(activeTier, traitname), Board )
 
 import Data.List ( maximumBy )
 import Data.Ord ( comparing )

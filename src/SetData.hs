@@ -1,6 +1,6 @@
 module SetData where
-import Traits
-import Units
+import Traits ( Trait(name), TraitName )
+import Units ( Unit(name), UnitName )
 import Data.Char (toLower)
 
 data SetData = SetData {
