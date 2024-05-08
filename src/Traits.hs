@@ -7,11 +7,14 @@ data Trait = Trait {
     deriving (Read, Eq)
 
 instance Show Trait where
-    show trait = "\n" ++ name trait ++ " " ++ show (tiers trait) 
+    show trait = name trait ++ " " ++ showTiers (tiers trait) ++ "\n"
+        where
+            showTiers [] = ""
+            showTiers (x:xs) = show x ++ " " ++ showTiers xs
 
 type TraitName = String
-type TraitTiers = [Int]
-
+type TraitTiers = [Int] 
+      
 newTrait :: String -> Trait
 newTrait text = Trait{name = getName text, tiers = getNums text}
     where

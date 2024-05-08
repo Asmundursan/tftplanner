@@ -14,7 +14,7 @@ data ActiveTrait = ActiveTrait {
     }
 
 instance Show ActiveTrait where
-    show aTrait = "\n" ++ traitname aTrait ++ " " ++ show (activeTier aTrait) ++ ": " ++ show (currentTier aTrait) ++ "/" ++ show (nextTier aTrait)
+    show aTrait = traitname aTrait ++ " " ++ show (activeTier aTrait) ++ ": " ++ show (currentTier aTrait) ++ "/" ++ show (nextTier aTrait) ++ "\n"
 
 type ActiveTraitList = [ActiveTrait]
 type Board = [Unit]

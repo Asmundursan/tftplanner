@@ -8,7 +8,7 @@ data Unit = Unit {
     deriving(Read, Eq)
 
 instance Show Unit where
-    show unit = "\n" ++ Units.name unit ++ " " ++ show (cost unit) ++ " " ++ showTraitList (traits unit)
+    show unit = Units.name unit ++ " " ++ show (cost unit) ++ " " ++ showTraitList (traits unit) ++ "\n"
         where showTraitList (t:traits)
                 | null traits = t
                 | otherwise = t ++ " " ++ showTraitList traits
