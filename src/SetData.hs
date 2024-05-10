@@ -21,9 +21,6 @@ addTrait trait std = std{SetData.traits = trait : SetData.traits std }
 addUnit :: Unit -> SetData -> SetData
 addUnit unit std = std{SetData.units = unit : SetData.units std }
 
---toLower :: TraitName -> TraitName
---toLower (TraitName x) = toLower x
-
 getTrait :: TraitName -> SetData -> Maybe Trait
 getTrait name std = gTrait name (SetData.traits std) 
     where gTrait :: TraitName -> [Trait] -> Maybe Trait
